@@ -48,8 +48,6 @@ h2 {
     justify-content: center;
 }
 
-.choices
-
 .konten {
     position: absolute;
     top: 50%;
@@ -245,6 +243,12 @@ footer {
 @media only screen and (max-width: 353px){
     .header {
         white-space: normal;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    #credit {
         font-size: 20px;
     }
 }
