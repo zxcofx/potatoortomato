@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <title>Potato or Tomato</title>
+</head>
+<body>
+    <div class="hasil" id="hasil">
+        <div class="tengah">
+            <p>Ya benar cuy!</p>
+            <p>Akhirnya saya bisa turu!</p>
+            <p>
+                <a class="anu" href="https://instagram.com/komang.py"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram</a>
+                <a class="anu" href="#" onclick="reset()"><i class="fa fa-refresh" aria-hidden="true"></i>
+                </i>Play again</a>
+            </p>
+        </div>
+        <footer>
+            <div class="bawah">
+                <p>Original Website: <a href="https://potatoortomato.com">potatoortomato.com</a></p>
+            </div>
+        </footer>
+    </div>
+    <div class="hasil-salah" id="hasil-salah">
+        <div class="tengah">
+            <!--let not talk about the style of this paragraph.-->
+            <p style="color: rgba(232,82,82,.85); text-shadow: 1px 1px 0 #1a1a1a,
+            -5px 5px 0 #1a1a1a,
+            5px -5px 0 #1a1a1a,
+            -5px -5px 0 #1a1a1a,
+            0px 5px 0 #1a1a1a,
+            0px -5px 0 #1a1a1a,
+            -5px 0px 0 #1a1a1a,
+            5px 0px 0 #1a1a1a,
+            2px 2px 0 #1a1a1a,
+            -2px 2px 0 #1a1a1a,
+            2px -2px 0 #1a1a1a,
+            -2px -2px 0 #1a1a1a,
+            0px 2px 0 #1a1a1a,
+            0px -2px 0 #1a1a1a,
+            -2px 0px 0 #1a1a1a,
+            2px 0px 0 #1a1a1a,
+            5px 2px 0 #1a1a1a,
+            -5px 2px 0 #1a1a1a,
+            5px -2px 0 #1a1a1a,
+            -5px -2px 0 #1a1a1a,
+            2px 5px 0 #1a1a1a,
+            -2px 5px 0 #1a1a1a,
+            2px -5px 0 #1a1a1a,
+            -2px -5px 0 #1a1a1a;">Stress</p>
+        </div>
+    </div>
+    <canvas class="canvas" id="my-canvas"></canvas>
+    <main>
+        <div class="main">
+            <div class="konten">
+                <div class="header">
+                    <h2 style="text-align: center;">Potato or Tomato</h2>
+                </div>
+                <div class="flex">
+                    <img class="foto" src="" alt="">
+                </div>
+                <div class="center">
+                    <div class="choices">
+                        <button class="but but1" id="potato" onclick="potato(this)">Potato</button>
+                        <h3 class="or" style="font-size: 1rem; font-family: Luckiest guy; color: white;">or</h3>
+                        <button class="but but2" id="tomato"onclick="tomato(this)">Tomato</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="code.js"></script>
+    <script src="index.min.js"></script>
+    <script>
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
+</body>
+</html>
